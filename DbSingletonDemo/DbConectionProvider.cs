@@ -2,9 +2,9 @@
 
 namespace DbSingletonDemo;
 
-public static class DbConectionProvider
+public class DbConectionProvider
 {
-  private static readonly SqlConnection _connection = new SqlConnection("Server=.;Database=MplusDb;Trusted_Connection=True;Encrypt=False;TrustServerCertificate=True;");
+  public static SqlConnection GetConnection =  new SqlConnection("Server=.;Database=MplusDb;Trusted_Connection=True;Encrypt=False;TrustServerCertificate=True;");
   
-  public static SqlConnection GetConnection => _connection;
+  private DbConectionProvider() { }
 }

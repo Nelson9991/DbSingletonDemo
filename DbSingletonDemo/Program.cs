@@ -1,7 +1,4 @@
-﻿using DbSingletonDemo;
-using Microsoft.Data.SqlClient;
-
-// Consulta sql
+﻿// Consulta sql
 const string sqlScript = """ 
 SELECT TOP (1000) [Id],[Code],[Name],[Brand],[Stock]
 FROM [MplusDb].[WebMaster].[Equipments] 
